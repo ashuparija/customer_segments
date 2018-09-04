@@ -19191,7 +19191,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Apply PCA by fitting the good data with the same number of dimensions as features</span>
@@ -19561,11 +19561,11 @@ kjoMTJIkSZLUYWCSJEmSpA4DkyRJkiR1/D+sk+A193atsAAAAABJRU5ErkJggg==
 <ul>
 <li>The first and second principal components explain in total 0.719 which is 71.9%.</li>
 <li>The varinace explained by the first four principal components is (0.4424+0.2766+0.1162+0.0962) = 0.9314 or 93.14%.</li>
-<li>Using the visualization provided above we can check what a particular establishment concentrates its most of the money on and what it tries to avoid the most. The more is the positive value of the weights the more desirable the feature is and more the negative value of the weight the more the establishment try to avoid that feature. Below we mention the specific feature that each dimension specified to be included or avoided :<ul>
-<li>Dimension 1 : Fresh and Frozen items are what the establishment wants and more importantly it tries to avoid Detergent_paper, milk and grocery as much as possible which can be concluded from its high negative weights.</li>
-<li>Dimention 2 : Quite surprisingly this dimention represents customers trying to avioid almost all the features.</li>
-<li>Dimension 3 : Delicatessen and Frozen items are what the establishment wants and it tries to avoid Detergent_paper and Fresh.</li>
-<li>Dimension 4 : Frozen items are what the establishment wants most and it tries to avoid Delicatessen and Fresh. </li>
+<li>Using the visualization provided above we can check which features have affect that particular dimension a lot and which features doesn't have much effect. The more is the value(positive or negative) of the weights the more desirable the feature is and more the negative value of the weight the more the establishment try to avoid that feature. Below we mention the specific features and thier influence on each dimension :<ul>
+<li>Dimension 1 : Since this dimension gives relatively high weightage to Detergent_paper, Milk and Grocery, this dimension will help us separate out the cutomers that concentrate on those more(like medium markets) from the other types of customers.</li>
+<li>Dimention 2 : Since this dimension gives relatively high weightage to Fresh, Frozen and Delicatessen, this dimension will help us separate out the cutomers that concentrate on those more(like restaurants) from the other types of customers.</li>
+<li>Dimension 3 : This dimension will help us seperate csutomers which have opposite speding patter when it come to Fresh and Delicatessen. It seperates outs the ones that spend more on one and less on other.</li>
+<li>Dimension 4 : This dimension will help us seperate out the customers which concentrate most of thier spendings on Frozen products.</li>
 </ul>
 </li>
 </ul>
@@ -19584,7 +19584,7 @@ kjoMTJIkSZLUYWCSJEmSpA4DkyRJkiR1/D+sk+A193atsAAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display sample log-data after having a PCA transformation applied</span>
@@ -19688,7 +19688,7 @@ kjoMTJIkSZLUYWCSJEmSpA4DkyRJkiR1/D+sk+A193atsAAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Apply PCA by fitting the good data with only two dimensions</span>
@@ -19720,7 +19720,7 @@ kjoMTJIkSZLUYWCSJEmSpA4DkyRJkiR1/D+sk+A193atsAAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display sample log-data after applying PCA transformation in two dimensions</span>
@@ -19803,7 +19803,7 @@ kjoMTJIkSZLUYWCSJEmSpA4DkyRJkiR1/D+sk+A193atsAAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Create a biplot</span>
@@ -19820,13 +19820,13 @@ kjoMTJIkSZLUYWCSJEmSpA4DkyRJkiR1/D+sk+A193atsAAAAABJRU5ErkJggg==
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[14]:</div>
+<div class="prompt output_prompt">Out[15]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f19f5b59390&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7efc22dd3e10&gt;</pre>
 </div>
 
 </div>
@@ -20980,7 +20980,7 @@ YII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Apply your clustering algorithm of choice to the reduced data</span>
@@ -21080,7 +21080,7 @@ Score :  0.303039972618
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#code to make the all the variables for optimal cluster number</span>
@@ -21126,7 +21126,7 @@ Score :  0.303039972618
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the results of the clustering from implementation</span>
@@ -21857,7 +21857,7 @@ RU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Inverse transform the centers</span>
@@ -21994,7 +21994,7 @@ RU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the predictions</span>
@@ -22121,7 +22121,7 @@ RU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the clustering results based on &#39;Channel&#39; data</span>
